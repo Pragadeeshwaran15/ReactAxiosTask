@@ -1,0 +1,27 @@
+.bg{
+    background-color: rgba(113, 69, 113, 0.767);
+}
+.but{
+    width:fit-content ;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    background-color: antiquewhite;
+    margin-left: 10px;
+}
+.but:hover{
+    background-color: rgb(115, 59, 117);
+    color: white;
+}
+.info{
+    margin: 10px 20px 10px 20px;
+    border: 2px solid black;
+    
+    
+}
+.form{
+    background-color: aliceblue;
+}
+h1{
+    text-decoration: underline;
+}
