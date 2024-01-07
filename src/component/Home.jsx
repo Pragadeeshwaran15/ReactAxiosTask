@@ -14,6 +14,7 @@ function Home() {
 const handleDelete=async(id)=>{
  try{ 
   let result=await axios.delete(`${API}/${id}`)
+  getInfo()
   toast.success("Deleted Successfully!")
 }
 catch(error){
@@ -61,7 +62,7 @@ let Navigate=useNavigate()
         {
           info.map((e,i)=>{
             return <tr key={i}>
-              <td>{e.id}</td>
+              <td>{i+1}</td>
               <td>{e.name}</td>
               <td>{e.username}</td>
               <td>{e.country},{e.state},{e.city},{e.pin}</td>
